@@ -3,7 +3,9 @@ An unofficial stub generator for vapoursynth and its plugins, which is helpful t
 
 ## Two way of Generating stub file
 1.(Onekey install) Place the whole folder `VapourSynth-Plugins-Stub-Generator` at the same path of `python.exe` of vapoursynth.
+
 run the `onekey install.bat`.
+
 Done! 
 
 2.(Install manually) At first, you need to have a [python](https://www.python.org/) with [vapoursynth](https://www.vapoursynth.com/) installed. You can check it with
