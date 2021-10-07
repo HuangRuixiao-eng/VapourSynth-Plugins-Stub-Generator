@@ -1,7 +1,7 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
-VERSION = "0.2.0"
+VERSION = "0.1.0"
 LICENSE = "MIT"
 DESCRIPTION = "A module to generate VapourSynth's stub file for intellicode."
 
@@ -9,7 +9,7 @@ with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="vsstubs",
+    name="vapoursynth-stub",
     version=VERSION,
     license=LICENSE,
     description=DESCRIPTION,
@@ -18,7 +18,7 @@ setup(
     url="https://github.com/SaltyChiang/VapourSynth-Plugins-Stub-Generator",
     author="SaltyChiang",
     author_email="SaltyChiang@users.noreply.github.com",
-    packages=["vsstubs"],
+    packages=find_packages(),
     classifiers=[
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
@@ -26,5 +26,5 @@ setup(
         "Operating System :: OS Independent",
     ],
     include_package_data=True,
-    entry_points={"console_scripts": ["vsstubs = vsstubs.main:main"]},
+    entry_points={"console_scripts": ["vsstub = vapoursynth_stub.main:main"]},
 )
